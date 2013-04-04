@@ -1,0 +1,5 @@
+theodo_bundles_expert:
+    resource: "@TheodoBundleExpertBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

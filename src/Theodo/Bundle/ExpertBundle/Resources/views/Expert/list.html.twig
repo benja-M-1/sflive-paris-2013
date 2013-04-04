@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<ul>
+    {% for expert in experts %}
+    <li>{{ expert }}</li>
+    {% endfor %}
+</ul>
+
+<form action="{{ path('theodoexpertbundle_expert_list') }}" method="post">
+    {{ form_errors(form) }}
+    {{ form_widget(form) }}
+    <button type="submit">Save</button>
+</form>
+{% endblock %}
